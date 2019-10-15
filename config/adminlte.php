@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Coop',
+    'title' => 'Transport',
 
     'title_prefix' => '',
 
@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>Coop</b>System',
+    'logo' => '<b>Transport</b>System',
 
-    'logo_mini' => '<b>A</b>LT',
+    'logo_mini' => '<b>T</b>ST',
 
     /*
     |--------------------------------------------------------------------------
@@ -155,22 +155,26 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ], */
         [
-            'text'    => 'multilevel',
+            'text'    => 'Membership',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Member List',
+                    'url'  => '/members',
                 ],
                 [
-                    'text'    => 'level_one',
+                    'text'    => 'Profile',
+                    'url'     => '#',
+                ],
+                [
+                    'text'    => 'Vehicles',
                     'url'     => '#',
                     'submenu' => [
                         [
                             'text' => 'level_two',
                             'url'  => '#',
                         ],
-                        [
+/*                         [
                             'text'    => 'level_two',
                             'url'     => '#',
                             'submenu' => [
@@ -183,7 +187,7 @@ return [
                                     'url'  => '#',
                                 ],
                             ],
-                        ],
+                        ], */
                     ],
                 ],
                 [

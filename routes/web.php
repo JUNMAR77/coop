@@ -13,17 +13,6 @@
 
 Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
-/* Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/about', 'HomeController@about')->name('about'); */
-
-/* Route::get('/members','Members\MembersController@show');
-Route::post('/members','Members\MembersController@store');
-Route::patch('/members/{member}','Members\MembersController@update');
-Route::delete('/members/{member}', 'Members\MembersController@destroy'); */
-
-
-//Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
@@ -31,3 +20,15 @@ Auth::routes();
 Route::get('/home', function() {
     return view('home');
 })->name('home')->middleware('auth');
+
+/* Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', 'HomeController@about')->name('about'); */
+
+Route::get('/members','Members\MembersController@show');
+Route::post('/add_member','Members\MembersController@add_member')->name('add_member');
+Route::post('/members','Members\MembersController@store');
+Route::patch('/members/{member}','Members\MembersController@update');
+Route::delete('/members/{member}', 'Members\MembersController@destroy'); 
+
+
+//Auth::routes();

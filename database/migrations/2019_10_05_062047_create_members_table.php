@@ -15,6 +15,7 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('syspk_member');
             $table->string('first_name');
             $table->string('last_name');
             $table->string('middle_name');
@@ -28,6 +29,7 @@ class CreateMembersTable extends Migration
             $table->string('mobile_no');
             $table->string('status');
             $table->string('category');
+            $table->string('member_type_id');
             $table->timestamps();
         });
     }
