@@ -13,16 +13,16 @@
 
 Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/about', 'HomeController@about')->name('about');
+/* Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', 'HomeController@about')->name('about'); */
 
-Route::get('/members','Members\MembersController@show');
+/* Route::get('/members','Members\MembersController@show');
 Route::post('/members','Members\MembersController@store');
 Route::patch('/members/{member}','Members\MembersController@update');
-Route::delete('/members/{member}', 'Members\MembersController@destroy');
+Route::delete('/members/{member}', 'Members\MembersController@destroy'); */
 
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
