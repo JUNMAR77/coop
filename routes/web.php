@@ -25,3 +25,7 @@ Route::post('/members','Members\MembersController@store');
 Route::patch('/members/{member}','Members\MembersController@update');
 Route::delete('/members/{member}', 'Members\MembersController@destroy');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
